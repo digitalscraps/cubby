@@ -1,0 +1,148 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+  font-family: sans-serif;
+  background: #000;
+}
+p {
+  font-size: .95em;
+  margin-bottom: 1.5em;
+}
+
+h2
+h3
+a {
+  color: #093a58;
+}
+
+h2
+h3 {
+  margin-top: 0;
+}
+
+a {
+  color: lightgreen;
+	text-decoration: none;
+}
+i {
+  color: #fff;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ------- Navigation ------- */
+.name {
+  font-size: 1.25em;
+  letter-spacing: .2rem;
+}
+
+.name, .main-nav li {
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.main-nav a {
+  font-size:.95em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-nav a i {
+  font-size: 1.5rem;
+}
+.main-nav a:hover, .main-nav a i:hover {
+  color: lightgreen;
+}
+.name a, .main-nav a {
+  padding: 10px 15px;
+}
+
+
+/* ---- Layout Containers ---- */
+.container {
+  padding: 1em;
+}
+
+.main-header {
+  padding-top: 1.5em;
+  margin-bottom: 30px;
+  border-bottom: dashed #fff 2px;
+}
+
+.main-footer {
+  text-align:center;
+	padding: 2em 0;
+  color:lightgreen;
+}
+
+/* ---- Page Elements ---- */
+.bg-image {
+  max-width: 100%;
+}
+/* =================================
+Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .name, .main-nav, .main-nav li {
+    display:inline;
+    text-decoration: none;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .name, .main-nav, .main-nav li {
+    display:inline;
+    text-decoration: none;
+  }
+  .name {
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .name, .main-nav, .main-nav li {
+    display:inline;
+    text-decoration: none;
+  }
+  .name {
+    font-size: 3rem;
+  }
+}
