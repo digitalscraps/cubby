@@ -37,6 +37,10 @@ a {
 i {
   color: #2a64f8;
 }
+img {
+  max-width: 100%;
+}
+
 
 /* =================================
 Layout Styles
@@ -44,57 +48,89 @@ Layout Styles
 
 /*-- Navigation -- */
 .main-header {
-  padding-top: 1.5em;
-  margin-bottom: 30px;
+  padding: 0 0 15px 5%;
+  margin-bottom: 15px;
   border-bottom: dashed #2a64f8 2px;
+  vertical-align: baseline;
 }
 
 .name {
-  font-size: 3.25em;
+  font-size: 1.95rem;
   letter-spacing: .2rem;
-}
-
-.name, .main-nav li {
-  text-align: center;
-  margin: 0 auto;
+  max-width: 240px;
+  margin: 0;
+  text-align: left;
   display: inline-block;
 }
 
+.name a {
+  padding: 0 5%;
+}
+
+.main-nav {
+  padding: 0;
+  display: inline;
+}
+
+.main-nav li {
+  text-align: center;
+  display: inline-block;
+  padding: 0 5%;
+}
+
 .main-nav a {
-  font-size:.95em;
+  font-size: .95em;
   color: #2a64f8;
   text-transform: uppercase;
 }
 .main-nav a i {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .main-nav a:hover, .main-nav a i:hover {
-  color: #7323ce;
+  color: red;
 }
 a:visited {
   color: #2a64f8;
 }
-.name a, .main-nav a {
-  padding: 10px 15px;
-}
 
-/*-- Column --*/
+
+/*-- layout containers --*/
+
+.banner {
+  color: #fff;
+  background: #2a64f8;
+  padding: 2.5% 0 0 0;
+  margin-bottom: 15px;
+}
 
 .container {
-  padding: 1em;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border: solid #2a64f8 2px;
 }
-
-
-/* ---- Footer ---- */
 .main-footer {
   text-align:center;
 	padding: 2em 0;
 }
 
-/* ---- Page Elements ---- */
-.bg-image {
-  max-width: 100%;
+/* ---- Page Elements---- */
+.logo {
+  min-width: 20%;
+  max-width: 125px;
+  display: inline-block;
+  padding: 0 5%;
 }
+.headline {
+  display: inline-block;
+  padding: 0 5%;
+}
+#tagline {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
 
 /* =================================
 Media Queries
@@ -103,24 +139,10 @@ Media Queries
   .wrap {
     min-height: calc(100vh - 89px);
   }
-  .container {
-    width: 80%;
-    max-width: 1150px;
-    margin: 0 auto;
-  }
-  .name,
-  .main-nav,
+
+  .name
   .main-nav li {
     display: inline-block;
-  }
-
-  .name {
-    width: 240px;
-    margin-right: 50px;
-  }
-
-  .main-nav li {
-    margin-right: 12px;
   }
 
   .col {
