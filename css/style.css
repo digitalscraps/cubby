@@ -41,8 +41,6 @@ Layout Styles
 /*-- Navigation -- */
 .main-header {
   padding: 0 0 15px 5%;
-  margin-bottom: 15px;
-  border-bottom: dashed #2a64f8 2px;
   vertical-align: baseline;
 }
 
@@ -91,16 +89,22 @@ a:visited {
 .banner {
   color: #fff;
   background: #2a64f8;
-  padding: 2.5% 0 0 0;
   margin-bottom: 15px;
+  padding: 2% 0;
 }
 
 .container {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
+}
+.header {
+  padding: 2.5% 0 0 0;
+}
+.main {
   padding: 0 10px;
   border: solid #2a64f8 2px;
+
 }
 .main-footer {
   text-align:center;
