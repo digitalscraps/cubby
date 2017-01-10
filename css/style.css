@@ -9,25 +9,17 @@ body {
 	line-height: 1.6;
 	color: #000;
   background: #fff;
+  font-family: 'Playfair Display' sans-serif;
 }
 p {
   font-size: .95em;
-  margin-bottom: 1.5em;
   font-family: Times;
 }
 
-h1
-h2
-h3
-a
- {
-  color: #2a64f8;
-  font-family: 'Playfair Display' sans-serif;
-}
-
-h2
-h3 {
-  margin-top: 0;
+h2,h3 {
+  display: inline;
+  padding-bottom: 2px;
+  border-bottom: solid #2a64f8 2px;
 }
 
 a {
@@ -147,9 +139,9 @@ Media Queries
 
   .col {
     display: inline-block;
-    width: 50%;
+    width: 33.3333%;
     margin-right: -4px;
     vertical-align: top;
-    padding: 0 1em 0 1em;
+    padding: 10px 15px;
   }
 }
