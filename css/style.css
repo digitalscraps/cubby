@@ -40,38 +40,34 @@ Layout Styles
 
 /*-- Navigation -- */
 .main-header {
-  padding: 0 0 15px 5%;
-  vertical-align: baseline;
+  padding: .10em 0 .10em 0;
 }
 
 .name {
   font-size: 1.95rem;
   letter-spacing: .2rem;
-  max-width: 240px;
   margin: 0;
-  text-align: left;
-  display: inline-block;
 }
 
-.name a {
-  padding: 0 5%;
+.name,
+.main-nav a {
+  text-align: center;
 }
 
 .main-nav {
+  text-align: center;
   padding: 0;
-  display: inline;
 }
 
 .main-nav li {
-  text-align: center;
-  display: inline-block;
-  padding: 0 5%;
-}
+  list-style: none;
 
+}
 .main-nav a {
   font-size: .95em;
   color: #2a64f8;
   text-transform: uppercase;
+  padding: 10px 15px;
 }
 .main-nav a i {
   font-size: 1.5em;
@@ -89,38 +85,39 @@ a:visited {
 .banner {
   color: #fff;
   background: #2a64f8;
-  margin-bottom: 15px;
-  padding: 2% 0;
+  margin-bottom: 60px;
+  padding: 3.2em 0;
 }
 
-.container {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
+.banner,
+.main-footer {
+  text-align:center;
 }
-.header {
-  padding: 2.5% 0 0 0;
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
 }
+
 .main {
   padding: 0 10px;
   border: solid #2a64f8 2px;
 
 }
 .main-footer {
-  text-align:center;
-	padding: 2em 0;
+  padding: 2em 0;
+  margin-top: 30px;
+
 }
 
 /* ---- Page Elements---- */
 .logo {
   min-width: 20%;
   max-width: 125px;
-  display: inline-block;
   padding: 0 5%;
 }
 .headline {
-  display: inline-block;
   padding: 0 5%;
+  margin-bottom: 0;
 }
 #tagline {
   margin-bottom: 15px;
@@ -131,21 +128,67 @@ a:visited {
 /* =================================
 Media Queries
 ==================================== */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-nav li {
+    display: inline;
+  }
+}
+
 @media (min-width: 769px) {
-  .wrap {
-    min-height: calc(100vh - 89px);
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .name
+  .name,
+  .col {
+  float: left;
+  }
+  .primary,
+  .secondary {
+    width: 50%;
+  }
+  .main-nav {
+    float: right;
+  }
   .main-nav li {
     display: inline-block;
+    margin-left: 15px;
+  }
+  .tagline {
+    font-size: 1.4em;
   }
 
-  .col {
-    display: inline-block;
-    width: 33.3333%;
-    margin-right: -4px;
-    vertical-align: top;
-    padding: 10px 15px;
+  /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+    max-width: 1400px;
   }
+  .primary {
+    width: 40%;
+  }
+  .secondary,
+  .tertiary {
+    width: 30%;
+  }
+  .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
 }
