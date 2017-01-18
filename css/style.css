@@ -31,6 +31,22 @@ i {
 }
 img {
   max-width: 100%;
+  margin: 1em 0;
+}
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
+figcaption {
+  font-size: .9em;
+  line-height: 1.5;
+  color: #fff;
+  background: rgba(42,100,248, .5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -123,12 +139,20 @@ a:visited {
   margin-bottom: 15px;
   font-style: italic;
 }
+.icon-logo {
+  width: 35px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #2a64f8;
+  border-radius: 50%;
+}
 
 
 /* =================================
 Media Queries
 ==================================== */
-@media (max-width: 500px) {
+@media (min-width: 300px) {
   .container {
     width: 90%;
     margin: 0 auto;
@@ -140,6 +164,14 @@ Media Queries
 
 @media (min-width: 769px) {
 
+  .main-header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
   .container {
     width: 90%;
     margin: 0 auto;
@@ -147,11 +179,14 @@ Media Queries
 
   .name,
   .col {
-  float: left;
+    float: left;
   }
   .primary,
   .secondary {
     width: 50%;
+  }
+  .tertiary {
+
   }
   .main-nav {
     float: right;
@@ -180,7 +215,7 @@ Media Queries
     max-width: 1400px;
   }
   .primary {
-    width: 40%;
+    width: 60%;
   }
   .secondary,
   .tertiary {
