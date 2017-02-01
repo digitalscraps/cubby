@@ -55,12 +55,6 @@ Layout Styles
 ==================================== */
 
 /*-- Navigation -- */
-.main-header {
-  padding: .10em 0 .10em 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .name {
   font-size: 1.95rem;
@@ -68,26 +62,30 @@ Layout Styles
   margin: 0;
 }
 
-.name,
-.main-nav a {
+.main-nav {
+  margin: 5px 0 0 0;
+  padding: 0;
   text-align: center;
 }
 
-.main-nav {
+.name a,
+.main-nav a {
   text-align: center;
-  padding: 0;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: .95em;
+  color: #2a64f8;
+  text-transform: uppercase;
 }
 
 .main-nav li {
   list-style: none;
   display: inline-block;
 }
-.main-nav a {
-  font-size: .95em;
-  color: #2a64f8;
-  text-transform: uppercase;
-  padding: 10px 15px;
-}
+
 .main-nav a i {
   font-size: 1.5em;
 }
@@ -101,16 +99,22 @@ a:visited {
 
 /*-- layout containers --*/
 
-.banner {
-  color: #fff;
-  background: #2a64f8;
-  margin-bottom: 60px;
-  padding: 3.2em 0;
+.main-header {
+  padding: .35em 0;
 }
+
 .banner,
 .main-footer {
   text-align:center;
 }
+
+.banner {
+  color: #fff;
+  background: #2a64f8;
+  margin-bottom: 24px;
+  padding: 3.2em 0;
+}
+
 .col {
   padding-right: 1em;
   padding-left: 1em;
@@ -154,9 +158,6 @@ Media Queries
 
 
 @media (min-width: 769px) {
-  .main-header, .main-nav, .row {
-    display: flex;
-  }
 
   .main-header {
     position: fixed;
@@ -165,34 +166,35 @@ Media Queries
     width: 100%;
     top: 0;
     z-index: 10;
+  }
+
+  .header-inner, .row {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+
+  .header-inner, .main-nav {
+    display: flex;
+  }
+
+  .header-inner {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .row {
     flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
   }
 
   .col {
     flex: 1 50%;
   }
 
-  .primary {
-
-
-  }
-
   .secondary {
     order: -1;
   }
-  .main-nav {
 
-  }
-  .main-nav li {
-    margin-left: 15px;
-  }
   .tagline {
     font-size: 1.4em;
   }
@@ -206,6 +208,5 @@ Media Queries
   .primary {
     flex-grow: 1.4;
   }
-
 
 }
