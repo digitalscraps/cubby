@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    font-family: 'Playfair Display' sans-serif;
+    border: 10px solid #2a64f8;
+  }
+
+  /*Global Font Displays */
+  h1 {
+    font-size: 7.5rem;
+    text-align: start;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 3.4375rem;
+    line-height: 55px;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.125rem;
+    line-height: 18px;
+    color: #fff;
+  }
+  h4 {
+    font-family: 'Maven Pro', Arial, sans-serif;
+    font-size: 2em;
+  }
+  h5 {
+    font-family: 'Maven Pro', Arial, sans-serif;
+    font-size: 1em;
+  }
+  p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 	1.25rem;
+    line-height: 1.25;
+    text-align: start;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  /* Links and Images */
+a {
+	text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+i {
+  color: #2a64f8;
+}
+img {
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+  /* Layout Elements */
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    margin-bottom: 1.5rem;
+  }
+
+  section {
+  margin-bottom: 1.25rem;
+  }
+  footer {
+    background-color: #2a64f8;
+  }
+  footer a {
+    padding: 1rem;
+  }
