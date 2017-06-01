@@ -1,5 +1,5 @@
 # cubby
-## Made with HTML5 and CSS3.
+## Made with HTML5 and CSS3 and jQuery
 #### template ideal for small organization or agency
 
 #### CSS grid is used for layout for to enhance minimal effect
