@@ -175,19 +175,19 @@ with brand on left and links on right */
 }
 
 .slider-container div:nth-of-type(1) {
-  background-color: #f06868;
+  background-color: #eb2e2c;
 }
 
 .slider-container div:nth-of-type(2) {
-  background-color: #fab57a;
+  background-color: #bbb;
 }
 
 .slider-container div:nth-of-type(3) {
-  background-color: #80d6ff;
+  background-color: #2A64F8;
 }
 
 .slider-container div:nth-of-type(4) {
-  background-color: #83B764;
+  background-color: #040054;
 }
 
 /* Footer (fo) */
