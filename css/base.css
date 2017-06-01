@@ -27,19 +27,18 @@
     color: #fff;
   }
   h3 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
     font-size: 1.125rem;
     line-height: 18px;
     color: #fff;
   }
   h4 {
-    font-family: 'Maven Pro', Arial, sans-serif;
-    font-size: 2em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25.2px;
   }
-  h5 {
-    font-family: 'Maven Pro', Arial, sans-serif;
-    font-size: 1em;
-  }
+
   p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 	1.25rem;
@@ -66,6 +65,9 @@ img {
 }
 
   /* Layout Elements */
+  header {
+    padding: 1rem;
+  }
   nav {
     margin: 0;
     padding: 0;
@@ -84,7 +86,6 @@ img {
   }
   footer {
     background-color: #2a64f8;
+    padding: 0 1rem;
   }
-  footer a {
-    padding: 1rem;
-  }
+ 

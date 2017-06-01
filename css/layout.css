@@ -8,16 +8,28 @@ header {
 .l-title {
     color: #2a64f8;
 }
+.l-logo {
+    background: #2a64f8;
+    width: 155px;
+    height: 83px;
+
+
+}
+.l-logo p {
+    font-family: 'Playfair Display' sans-serif;
+    color: #fff;
+    font-size: 1.75rem;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 14px;
+}
+
+.l-logo a:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* Basic Flexbox & Grid Elements  */
-.flex-twothirds {
-    flex: 2 auto;
-}
-.flex-square {
-    flex: 1 auto;
-    display:flex;
-    justify-content: center;
-}
 .flex-container {
     display:flex;
     flex-wrap: wrap;
@@ -80,8 +92,53 @@ with brand on left and links on right */
 
 
 /* Footer (fo) */
+.l-fo-link {
+    margin: 36px 0 24px 0;
+}
 .l-fo-link a {
     font-size: 1.125rem;
     line-height: 25.2px;
     color: #040054;
+}
+
+footer a {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:before, a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -2px;
+  background: #fff;
+}
+footer a:before {
+  left: 0;
+}
+
+footer a:after {
+  left: 0;
+  background: #fff;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+footer a:hover:before {
+  background: #fff;
+  width: 5%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36,1);
+}
+
+footer a:hover:after {
+  background: transparent;
+  width: 5%;
+  transition: 0s;
 }
